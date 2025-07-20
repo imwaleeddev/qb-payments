@@ -29,14 +29,14 @@ QBCore.Functions.CreateCallback('qb-payments:server:players', function(source, c
 
             if distance <= 10.0 then
                 local P = QBCore.Functions.GetPlayer(v)
-                -- if P.PlayerData.source ~= src then
-                local name = P.PlayerData.charinfo.firstname .. ' ' .. P.PlayerData.charinfo.lastname
-                Players[#Players + 1] = {
-                    value = tonumber(P.PlayerData.source),
-                    name = "[" .. P.PlayerData.source .. "] - " .. name,
-                    citizenid = P.PlayerData.citizenid,
-                }
-                -- end
+                if P.PlayerData.source ~= src then
+                    local name = P.PlayerData.charinfo.firstname .. ' ' .. P.PlayerData.charinfo.lastname
+                    Players[#Players + 1] = {
+                        value = tonumber(P.PlayerData.source),
+                        name = "[" .. P.PlayerData.source .. "] - " .. name,
+                        citizenid = P.PlayerData.citizenid,
+                    }
+                end
             end
         end
 
