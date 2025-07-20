@@ -1,6 +1,7 @@
 # qb-payments
 
 ## Video
+https://streamable.com/go2yib
 
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
