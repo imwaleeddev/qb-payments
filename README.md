@@ -1,6 +1,6 @@
 # qb-payments
 
-## Videore
+## Video
 
 ## Dependencies
 - [qb-core](https://github.com/qbcore-framework/qb-core)
